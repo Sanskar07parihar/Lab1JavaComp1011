@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDate;
 
 public class HelloApplication extends Application {
     @Override
@@ -18,6 +19,11 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+
+        MusicAlbum MusicAlbum1 = new MusicAlbum(" Buzz  "," Arshad  ", LocalDate.of( 2018,3,5  ));
+        MusicAlbum MusicAlbum2 = new MusicAlbum("Airlift","Arijit", LocalDate.of(2017,4,5));
+
+        System.out.println("MusicAlbum1: "+MusicAlbum1);
+        System.out.println("MusicAlbum2: "+MusicAlbum2);
     }
 }
