@@ -47,7 +47,7 @@ public class MusicAlbum {
 
     public void setDate(LocalDate date) {
         if (date.isAfter(LocalDate.now()))
-            throw new IllegalArgumentException("date can not be in the future");
+            throw new IllegalArgumentException("date can not be in the future and is showing release year");
         else
             this.date = date;
     }
